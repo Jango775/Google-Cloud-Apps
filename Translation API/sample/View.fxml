@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="input" layoutX="36.0" layoutY="57.0" prefHeight="157.0" prefWidth="243.0" promptText="Input" />
+                <TextField fx:id="output" layoutX="300.0" layoutY="57.0" prefHeight="155.0" prefWidth="268.0" promptText="Output" />
+                <Button fx:id="Translate" layoutX="461.0" layoutY="256.0" mnemonicParsing="false" onAction="#DoTranslation" text="Translate" />
+            </children></AnchorPane>
+    </center>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Options">
+                    <items>
+                        <MenuItem fx:id="Close" mnemonicParsing="false" onAction="#Exit" text="Close" />
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="Language">
+               <items>
+                  <MenuItem fx:id="English" mnemonicParsing="false" onAction="#LanguageChoice" text="English" />
+                  <MenuItem fx:id="German" mnemonicParsing="false" onAction="#LanguageChoice" text="German" />
+                  <MenuItem fx:id="French" mnemonicParsing="false" onAction="#LanguageChoice" text="French" />
+                  <MenuItem fx:id="Spanish" mnemonicParsing="false" onAction="#LanguageChoice" text="Spanish" />
+               </items>
+            </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
