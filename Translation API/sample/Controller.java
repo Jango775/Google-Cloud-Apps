@@ -56,7 +56,7 @@ public class Controller implements Initializable , EventHandler<ActionEvent> {
 
 
     private static String translate(String langFrom, String langTo, String inp) throws IOException {
-        String urlStr = "Google Script Url Goes Here. Check the Google Script Set Up File." +
+        String urlStr = "Google Script Url Goes Here." +
                 "?q=" + URLEncoder.encode(inp, "UTF-8") +
                 "&target=" + langTo +
                 "&source=" + langFrom;
